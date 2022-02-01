@@ -79,9 +79,9 @@ img{ width : 100%; }
 
 .bp-main-wrapper .container-fluid .bg-elements{
     position: absolute;
-    left: -30px;
-    top: -30px;
-    max-width: 20%;
+    left: -3%;
+    top: -3%;
+    width: 15%;
     opacity: 0.4;
 }
 
@@ -92,13 +92,28 @@ img{ width : 100%; }
 
 .bp-main-wrapper .top-pov .top-pov__img-area .top-pov__img-area--full-img{
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 35% 100%);
-    margin: 0 0 -5px 0;
+    z-index: 101;
+}
+
+.bp-main-wrapper .top-pov .top-pov__img-area .top-pov__img-area--full-img img{
+    vertical-align: middle;
 }
 
 .bp-main-wrapper .top-pov .top-pov__img-area .top-pov__img-area--thumb{
     position: absolute;
     max-width: 215px;
     top: 20%;
+    z-index: 100;
+}
+
+.bp-main-wrapper .top-pov .top-pov__img-area .top-pov__img-area--border{
+    position: absolute;
+    top: 0;
+    background: #61BDD2;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 35% 100%);
+    width: 100%;
+    height: 100%;
+    left: -10px;
 }
 
 .bp-main-wrapper .top-pov .top-pov__img-area .top-pov__img-area--thumb img{
