@@ -8,7 +8,7 @@ p {
 *{ margin : 0; padding : 0; }
 img{ width : 100%; }
 
-.elanco-cta-box{
+.bp-main-wrapper .elanco-cta-box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@ img{ width : 100%; }
     text-decoration: none;
 }
 
-.elanco-cta-box a{
+.bp-main-wrapper .elanco-cta-box a{
     color : #fff;
     background-color : #00205b;
     height: 54px;
@@ -32,6 +32,13 @@ img{ width : 100%; }
     width: 200px;
 }
 
+.bp-main-wrapper .section-title{
+    font-size: 25px;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    padding: 50px 15px;
+    text-align: center;
+}
+
 .bp-main-wrapper .container{
     max-width: 1440px;
     margin: 0 auto;
@@ -39,6 +46,12 @@ img{ width : 100%; }
 
 .bp-main-wrapper .container-fluid{
     width: 100%;
+}
+
+.bp-main-wrapper .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -118,6 +131,53 @@ img{ width : 100%; }
 
 .bp-main-wrapper .top-pov .top-pov__img-area .top-pov__img-area--thumb img{
     border: 7px solid #61BDD2;
+}
+
+/* Home Grooming */
+.bp-main-wrapper .home-grooming .home-grooming__single-item{
+
+}
+
+.bp-main-wrapper .home-grooming .flex-container{
+    justify-content: space-around;
+}
+
+.bp-main-wrapper .home-grooming .home-grooming__single-item .home-grooming__single-item--img{
+    max-width: 220px;
+}
+
+.bp-main-wrapper .home-grooming .home-grooming__single-item .home-grooming__single-item--img img{
+    border-radius: 50%;
+}
+
+.bp-main-wrapper .home-grooming .home-grooming__single-item .home-grooming__single-item--steps{
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    font-size: 18px;
+    color: #1E839A;
+    padding: 30px 15px !important;
+}
+
+.bp-main-wrapper .home-grooming .home-grooming__single-item:first-child .home-grooming__single-item--steps{
+    color: #A6549C;
+}
+
+.bp-main-wrapper .home-grooming .home-grooming__single-item:last-child .home-grooming__single-item--steps{
+    color: #EC6432;
+}
+
+.bp-main-wrapper .home-grooming .home-grooming__single-item .home-grooming__single-item--copy{
+    max-width: 250px;
+    font-family: "PetcoCircularTT-Regular", arial !important;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.bp-main-wrapper .home-grooming .home-grooming__single-item .home-grooming__single-item--img,
+.bp-main-wrapper .home-grooming .home-grooming__single-item .home-grooming__single-item--steps,
+.bp-main-wrapper .home-grooming .home-grooming__single-item .home-grooming__single-item--copy{
+    padding: 0 15px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -205,6 +265,10 @@ img{ width : 100%; }
         display: block;
     }
 
+    .bp-main-wrapper .flex-container{
+        flex-wrap: wrap;
+    }
+
     /* Top POV section */
     .bp-main-wrapper .top-pov{
         flex-wrap: wrap;
@@ -246,11 +310,16 @@ img{ width : 100%; }
     }
 
     .bp-main-wrapper .top-pov .top-pov__img-area .top-pov__img-area--full-img img{
-        border-bottom: 8px solid #61BDD2;;
+        border-bottom: 8px solid #61BDD2;
     }
 
     .bp-main-wrapper .top-pov .top-pov__img-area .top-pov__img-area--thumb{
         max-width: 150px;
+    }
+
+    /* Home Grooming */
+    .bp-main-wrapper .home-grooming .home-grooming__single-item:nth-child(2){
+        padding: 50px 15px;
     }
 
 
