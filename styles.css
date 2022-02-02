@@ -8,7 +8,7 @@ p {
 *{ margin : 0; padding : 0; }
 img{ width : 100%; }
 
-.bp-main-wrapper .elanco-cta-box{
+.bp-main-wrapper .cta-box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@ img{ width : 100%; }
     text-decoration: none;
 }
 
-.bp-main-wrapper .elanco-cta-box a{
+.bp-main-wrapper .cta-box a{
     color : #fff;
     background-color : #00205b;
     height: 54px;
@@ -178,6 +178,73 @@ img{ width : 100%; }
     padding: 0 15px;
     text-align: center;
     margin: 0 auto;
+}
+
+/* Carousel Sections */
+.bp-main-wrapper .carousel-sections{
+    padding: 50px 15px;
+}
+
+.bp-main-wrapper .carousel-sections .container{
+    padding: 30px 0;
+}
+
+.bp-main-wrapper .carousel-sections .carousel-sections__feature-img{
+    padding-right: 30px;
+}
+
+.bp-main-wrapper .carousel-sections .carousel-sections__carousel-list{
+    padding-right: 15px;
+}
+
+.bp-main-wrapper .carousel-sections .carousel-sections__carousel-list .carousel-sections__carousel-list--breadcrumb{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #A6549C;
+}
+
+.bp-main-wrapper .carousel-sections .carousel-sections__carousel-list .carousel-sections__carousel-list--breadcrumb{
+    justify-content: space-between;
+}
+
+.bp-main-wrapper .carousel-sections .carousel-sections__carousel-list .carousel-sections__carousel-list--breadcrumb h3{
+    color: #A6549C;
+    font-size: 25px;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+}
+
+.bp-main-wrapper .carousel-sections .carousel-sections__carousel-list .carousel-sections__carousel-list--breadcrumb a{
+    color: #001952;
+    font-size: 16px;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    text-decoration: underline;
+}
+
+.bp-main-wrapper .carousel-sections .carousel-sections__carousel-list--wrapper{
+    padding: 20px 0;
+    justify-content: space-around;
+}
+
+.bp-main-wrapper .carousel-sections .carousel-sections__carousel-list--wrapper .single-product{
+    width: calc(100%/3 - 15px);
+}
+
+.bp-main-wrapper .carousel-sections .carousel-sections__carousel-list--wrapper .single-product .single-product__img{
+    max-width: 190px;
+    margin: 0 auto;
+}
+
+.bp-main-wrapper .carousel-sections .carousel-sections__carousel-list--wrapper .single-product .single-product__headline{
+    font-size: 13px;
+    font-family: "PetcoCircularTT-Regular", arial !important;
+    display: block;
+    padding: 20px 0;
+    min-height: 50px;
+}
+
+.bp-main-wrapper .carousel-sections .carousel-sections__carousel-list--wrapper .single-product .single-product__cta a{
+    font-size: 16px;
+    color: #001952;
+    font-family: "PetcoCircularTT-Bold", arial !important;
 }
 
 
