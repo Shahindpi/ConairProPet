@@ -10,7 +10,7 @@
 <body>
     <div class="bp-main-wrapper">
         <!-- POV section -->
-        <section class="container-fluid">
+        <!-- <section class="container-fluid">
             <div class="top-pov">
                 <div class="top-pov__textarea">
                     <div class="top-pov__textarea--logo"><img src="conair-assets/POV/conairpropet_blue.png" alt="Conair Logo" /></div>
@@ -24,7 +24,61 @@
                 </div>
             </div>
             <div class="bg-elements m-hide"><img src="conair-assets/POV/footprint.png" /></div>
-        </section>
+        </section> -->
+
+        <!-- Merric Examples -->
+        <div class="conair-pov__slider">
+            <div class="conair-pov__slides">
+                <!-- Radio buttons -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+
+                <section class="container-fluid slide first">
+                    <div class="top-pov slider_first">
+                        <div class="top-pov__textarea">
+                            <div class="top-pov__textarea--logo"><img src="conair-assets/POV/conairpropet_blue.png" alt="Conair Logo" /></div>
+                            <div class="top-pov__textarea--title">GROOM WITH LOVE<sup>®</sup></div>
+                            <div class="top-pov__textarea--sub-title">With the right tools, care & love, home grooming is a great way to bond with your pet.</div>
+                        </div>
+                        <div class="top-pov__img-area">
+                            <div class="top-pov__img-area--border m-hide"></div>  
+                            <div class="top-pov__img-area--full-img"><img src="conair-assets/POV/pov1.jpg" /></div>
+                            <div class="top-pov__img-area--thumb m-hide"><img src="conair-assets/POV/pov1_thumb.jpg" /></div> 
+                        </div>
+                    </div>
+                    <div class="bg-elements m-hide"><img src="conair-assets/POV/footprint.png" /></div>
+                </section>
+                <section class="container-fluid slide">
+                    <div class="top-pov slider_second">
+                        <div class="top-pov__textarea">
+                            <div class="top-pov__textarea--logo"><img src="conair-assets/POV/conairpropet_blue.png" alt="Conair Logo" /></div>
+                            <div class="top-pov__textarea--title">SAFE AND GENTLE GROOMING TOOLS</div>
+                            <div class="top-pov__textarea--sub-title">From one of the most trusted personal grooming brands.                            </div>
+                        </div>
+                        <div class="top-pov__img-area">
+                            <div class="top-pov__img-area--border m-hide"></div>  
+                            <div class="top-pov__img-area--full-img"><img src="conair-assets/POV/pov2.jpg" /></div>
+                            <div class="top-pov__img-area--thumb m-hide"><img src="conair-assets/POV/pov2-thumb.jpg" /></div> 
+                        </div>
+                    </div>
+                    <div class="bg-elements m-hide"><img src="conair-assets/POV/footprint.png" /></div>
+                </section>
+                <!-- Auto navigation -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                </div>
+            </div>
+            <!-- Manual navigation -->
+            <div class="navigation-manual" style="display: none;">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+            </div>
+        </div>
 
         <!-- HomeGrooming section -->
         <div class="section-title">3 Easy Steps to Home Grooming</div>
@@ -237,5 +291,18 @@
             </div>
         </section>
     </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript">
+        //slider script
+        let counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 2) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
 </body>
 </html>
