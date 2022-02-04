@@ -267,15 +267,58 @@ img{ width : 100%; }
     align-items: flex-start;
 }
 
+.bp-main-wrapper .video-sections .video-sections__wrapper{
+    width : 49%;
+}
+
 .bp-main-wrapper .video-sections .video-sections__video-list{
     flex-wrap: wrap;
-    width : 49%;
+    width : 100%;
     justify-content: space-around;
 }
 
 .bp-main-wrapper .video-sections .video-sections__video-list .video-sections__video-list--single-video{
     width : 45%;
     padding: 10px;
+}
+
+
+/* Bottom Heros */
+.bp-main-wrapper .bottom-hero{
+    padding: 50px 0 150px;
+}
+
+.bp-main-wrapper .bottom-hero .container-fluid{
+    background-image: url("./conair-assets/BottomHeros/bottom-hero-dsk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bp-main-wrapper .bottom-hero .container{
+    position: relative;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.bp-main-wrapper .bottom-hero .bottom-hero__text-area{
+    color: #fff;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    font-size: 25px;
+    width: 22%;
+    margin: 4%;
+    background: #A6549C;
+    padding: 3% 5%;
+    border-left: 7px solid #61BDD2;
+    border-bottom: 7px solid #61BDD2;
+    text-align: center;
+}
+
+.bp-main-wrapper .bottom-hero .bottom-hero__logo{
+    position: absolute;
+    max-width: 220px;
+    right: 40%;
+    bottom: -34%;
 }
 
 
@@ -589,6 +632,10 @@ img{ width : 100%; }
         padding: 15px;
     }
 
+    .bp-main-wrapper .video-sections .video-sections__wrapper{
+        width : 100%;
+    }
+
     .bp-main-wrapper .video-sections .video-sections__video-list{
         width: 400%;
         flex-wrap: nowrap;
@@ -601,6 +648,40 @@ img{ width : 100%; }
 
     .bp-main-wrapper .video-sections .video-sections__video-list .video-sections__video-list--single-video:first-child{
         padding-left: 0;
+    }
+
+    /* Bottom Heros */
+    .bp-main-wrapper .bottom-hero{
+        padding: 50px 0;
+    }
+
+    .bp-main-wrapper .bottom-hero .container-fluid{
+        background-image: none;
+    }
+
+    .bp-main-wrapper .bottom-hero .container{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .bp-main-wrapper .bottom-hero .bottom-hero__mobile-img{
+
+    }
+
+    .bp-main-wrapper .bottom-hero .bottom-hero__text-area{
+        width: 100%;
+        margin: 0;
+        padding: 10%;
+        border-left: none;
+        border-bottom: none;
+    }
+
+    .bp-main-wrapper .bottom-hero .bottom-hero__logo{
+        position: unset;
+        max-width: 220px;
+        right: 40%;
+        bottom: -34%;
     }
 
 
