@@ -653,6 +653,20 @@ img{ width : 100%; }
         padding: 50px 15px;
     }
 
+    .bp-main-wrapper .home-grooming{
+        justify-content: space-around;
+        overflow: auto;
+    }
+
+    .bp-main-wrapper .home-grooming .container{
+        width: 300%;
+        flex-wrap: nowrap;
+    }
+
+    .bp-main-wrapper .home-grooming .home-grooming__single-item{
+        width : 70%;
+    }
+
     /* Carousel Sections */
     .bp-main-wrapper .carousel-sections{
         padding: 50px 15px;
