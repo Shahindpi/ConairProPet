@@ -13,16 +13,6 @@
  */
 
 
- @font-face {
-	font-family: PetcoCircularTT-Regular;
-	src: url(../fonts/PetcoCircularTT-Regular.woff2) format("woff2"), url(../fonts/PetcoCircularTT-Regular.woff) format("woff")
-}
-
-@font-face {
-	font-family: PetcoCircularTT-Bold;
-	src: url(../fonts/PetcoCircularTT-Bold.woff2) format("woff2"), url(../fonts/PetcoCircularTT-Bold.woff) format("woff")
-}
-
 /*Default css*/
 body {
     margin: 0;
@@ -273,24 +263,30 @@ a:hover {
 /**************************************/
 /************ Header  Area*************/
 /************************************/
-.slider-single-item {
-    background: url("../images/new/banner1.png");
-    max-height: 520px;
-    min-height: 520px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding-top: 117px;
+
+
+
+.slider-banner-content {
+    position: absolute;
+    top: 0;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
     padding-bottom: 92px;
 }
 
+.slider-single-item img{
+    width: 100%;
+    height: auto;
+}
+
+.slider-single-item {
+    position: relative;
+    
+}
+
 .slider-single-item2 {
-    background: url("../images/new/banner2.png");
-    max-height: 520px;
-    min-height: 520px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: url("../images/new/banner2.png"); 
 }
 .slider-banner-content > h2 {
     color: #ffffff;
@@ -314,7 +310,7 @@ a:hover {
     font-family: "PetcoCircularTT-Regular", arial !important;
     font-weight: 400;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     width: 42%;
 }
 
@@ -426,7 +422,7 @@ a:hover {
             flex: 0 0 259px;
     text-align: center;
 }
-.pet-img a > img {
+.pet-img > img {
     max-width: 220px;
     width: 100%;
     height: auto;
@@ -435,6 +431,10 @@ a:hover {
 }
 .common-heading {
     text-align: center;
+}
+.slider-single-item.slider-single-item2 .slider-banner-content > h2 {
+    padding-bottom: 40px;
+    padding-top: 19px;
 }
 
 .common-heading > h2 {
@@ -446,6 +446,16 @@ a:hover {
     font-weight: bold;
 }
 .easy-single-item > h3 {
+    padding-top: 31px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    color: #000;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    font-weight: bold;
+    display: block;
+}
+
+.easy-single-item > a {
     padding-top: 31px;
     padding-bottom: 16px;
     font-size: 18px;
@@ -538,7 +548,7 @@ img {
     max-width: 100%;
 }
 
-/*.carousel-items .pro-next.slick-arrow {
+.carousel-items .pro-next.slick-arrow {
     position: absolute;
     top: 50%;
     right: 0px;
@@ -549,12 +559,12 @@ img {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     cursor: pointer;
-}*/
+}
 
-.keep-dog-inner-flex > svg {
+/*.keep-dog-inner-flex > svg {
     width: 200px;
     cursor: pointer;
-}
+}*/
 
 .slider-banner-content > h2 > sup {
     font-size: ;
@@ -567,12 +577,12 @@ img {
     margin-bottom: 0px;
 }
 
-.dog-keep-img.prep-inner-img > a > img {
+/*.dog-keep-img.prep-inner-img > a > img {
     width: 74px;
     margin: 0 auto;
     text-align: center;
     display: block;
-}
+}*/
 .slice-area > h5 > sup {
     font-size: 15px;
     font-family: "PetcoCircularTT-Regular", arial !important;
@@ -661,13 +671,25 @@ img {
 /**************************************/
 /************ Mesia Query  Area*************/
 /************************************/
+@media all and (min-width: 1560px) {
+      .slider-banner-content > h2 {
+        width: 32% !important;
+    }
+    .slider-banner-content > p {
+        width: 25%;
+    }
+     .slider-single-item {
+        max-height: 600px;
+        min-height: 600px;
+    }
+}
 @media all and (min-width: 1440px) {
     .product-container {
         max-width: 1380px;
     }
-    .slider-single-item {
-        max-height: 600px;
-        min-height: 600px;
+   
+    .slider-banner-content > h2 {
+        width: 55%;
     }
 }
 
@@ -678,8 +700,14 @@ img {
     .slider-banner-content > h2 {
         font-size: 44px;
     }
-    .dog-keep-img.prep-inner-img > a > img {
+/*    .dog-keep-img.prep-inner-img > a > img {
         width: 50px;
+    }*/
+    .slider-banner-content {
+        padding-top: 35px;
+    }
+    .keep-dog-lear-items > p {
+        font-size: 12px;
     }
 }
 
@@ -687,16 +715,26 @@ img {
     .slider-banner-content > img {
         width: 245px;
     }
-    .slider-banner-content > h2 {
+   .slider-banner-content > h2 {
         font-size: 30px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        width: 50%;
+    }
+    .slider-banner-content {
+        padding-top: 20px;
+    }
+    .slider-single-item.slider-single-item2 .slider-banner-content > h2 {
+        padding-bottom: 15px;
+        padding-top: 5px;
     }
 
-    .slider-single-item {
+ /*   .slider-single-item {
         max-height: 420px;
         min-height: 420px;
         padding-top: 100px;
         padding-bottom: 92px;
-    }
+    }*/
     .keep-your-dog-right {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 100%;
@@ -709,24 +747,22 @@ img {
                 flex: 0 0 100%;
     }
 
-    .dog-keep-img.prep-inner-img > a > img {
-        width: 74px;
-    }
+
 }
 
 @media all and (max-width: 767px) {
     .easy-way-main-flex {
         overflow-x: auto;
     }
-    /* Hide scrollbar for Chrome, Safari and Opera */
+
     .easy-way-main-flex::-webkit-scrollbar {
         display: none;
     }
 
-    /* Hide scrollbar for IE, Edge and Firefox */
+
     .easy-way-main-flex {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;
+        scrollbar-width: none; 
     }
     .easy-single-item {
         -webkit-box-flex: 0;
@@ -802,6 +838,21 @@ img {
     .m-dnone {
         display: none !important;
     }
+    .slider-banner-content {
+        position: inherit;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .slider-single-item.slider-single-item2 .slider-banner-content > h2 {
+        padding-bottom: 25px;
+        padding-top: 18px;
+    }
+
+    .slider-items .slick-dots {
+        bottom: 25px;
+    }
+
+
 }
 
 @media all and (max-width: 575px) {
@@ -833,13 +884,17 @@ img {
     .keep-dog-lear-items > p {
         min-height: 75px;
     }
-}
-
-@media all and (max-width: 413px) {
-    .dog-keep-img.prep-inner-img > a > img {
-        width: 60px;
+    .keep-dog-lear-items > p {
+        font-size: 13px;
+    }
+    .slice-area > h5 {
+        font-size: 18px;
+        width: 90%;
+        margin: 0 auto;
     }
 }
+
+
 
 @media all and (max-width: 374px) {
     .common-heading > h2 {
@@ -851,11 +906,6 @@ img {
                 flex: 0 0 67%;
         margin: 15px;
     }
-    .dog-keep-img.prep-inner-img > a > img {
-        width: 54px;
-    }
 }
 
-/**************************************/
-/************ keep-your-dog-area*************/
-/************************************/
+
