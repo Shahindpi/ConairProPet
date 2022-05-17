@@ -610,9 +610,6 @@ a:hover {
     
 }
 
-.slider-single-item2 {
-    background: url("../images/new/banner2.png"); 
-}
 .slider-banner-content > h2 {
     color: #ffffff;
     font-size: 56px;
@@ -993,7 +990,7 @@ img {
     }
    
     .slider-banner-content > h2 {
-        width: 55%;
+        width: 50%;
     }
 }
 
